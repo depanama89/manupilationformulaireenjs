@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.container {
+  width: 300px;
+  height: auto;
+}
+.inputName,
+.inputPostName,
+.inputAge {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#familyForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.inputForm {
+  padding: 12px 16px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+}
+.btnEnregistre {
+  padding: 12px 24px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  max-width: min-content;
+  cursor: pointer;
+}
