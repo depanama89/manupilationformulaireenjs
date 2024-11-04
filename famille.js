@@ -38,10 +38,14 @@ formFamily.addEventListener("submit", (e) => {
   console.log(nameInput.value, postNomInput.value, age.value);
 
   // console.log("test");
-  const objetMembre = creerMembreDeFamille();
-  objetMembre.creerMembre(nameInput.value, postNomInput.value, age.value);
-  famille.push(objetMembre);
-  console.log(famille);
+  if (nameInput.value == "" || postNomInput.value == "" || age.value == "") {
+    alert("impossible d'insert les elements");
+  } else {
+    const objetMembre = creerMembreDeFamille();
+    objetMembre.creerMembre(nameInput.value, postNomInput.value, age.value);
+    famille.push(objetMembre);
+    console.log(famille);
+  }
 });
 // const rodrick = creerMembreDeFamille();
 // rodrick.creerMembre("rodick", "kudiatu", 30);
