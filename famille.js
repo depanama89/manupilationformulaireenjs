@@ -13,12 +13,15 @@ const nameInput = document.getElementById("name");
 const postNomInput = document.getElementById("postnom");
 const ageInput = document.getElementById("age");
 const formFamily = document.getElementById("familyForm");
-console.log(nameInput.value, postNomInput);
+const btnLabel = document.getElementById("label");
+console.log(btnLabel);
 
 const famille = [];
+const arLabel = [];
 
 const creerMembreDeFamille = () => {
   return {
+    label: "",
     nom: "",
     postNom: "",
     age: 0,
@@ -30,6 +33,9 @@ const creerMembreDeFamille = () => {
       } else {
         alert("Veuillez remplir le nom, postnom et le prénom");
       }
+    },
+    Addlabel: function (labelName) {
+      this.label = labelName;
     },
   };
 };
@@ -47,5 +53,10 @@ formFamily.addEventListener("submit", (e) => {
     console.log(famille);
   }
 });
-// const rodrick = creerMembreDeFamille();
+btnLabel.addEventListener("click", function () {});
+const rodrick = creerMembreDeFamille();
+rodrick.label.libelle = "company";
+rodrick.label.libelle = "company";
+console.log(rodrick);
+
 // rodrick.creerMembre("rodick", "kudiatu", 30);
